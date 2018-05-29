@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ReleaseAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReleaseAddResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseAdd_NEW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseAdd_NEWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReleaseAdd_NEWResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReleaseDelResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseDel_NEW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseDel_NEWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReleaseDel_NEWResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="releases">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VirtualEReleaseInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VirtualEReleaseInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VirtualEReleaseInfoResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseByCtnNOAndVesselInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReleaseByCtnNOAndVesselInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReleaseByCtnNOAndVesselInfoResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Release_B2B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Release_B2BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Release_B2BResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Release_updateAutoState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Release_updateAutoStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Release_updateAutoStateResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReleaseAddSoapIn">
+    <wsdl:part name="parameters" element="tns:ReleaseAdd" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseAddSoapOut">
+    <wsdl:part name="parameters" element="tns:ReleaseAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseAdd_NEWSoapIn">
+    <wsdl:part name="parameters" element="tns:ReleaseAdd_NEW" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseAdd_NEWSoapOut">
+    <wsdl:part name="parameters" element="tns:ReleaseAdd_NEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseDelSoapIn">
+    <wsdl:part name="parameters" element="tns:ReleaseDel" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseDelSoapOut">
+    <wsdl:part name="parameters" element="tns:ReleaseDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseDel_NEWSoapIn">
+    <wsdl:part name="parameters" element="tns:ReleaseDel_NEW" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseDel_NEWSoapOut">
+    <wsdl:part name="parameters" element="tns:ReleaseDel_NEWResponse" />
+  </wsdl:message>
+  <wsdl:message name="VirtualEReleaseInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:VirtualEReleaseInfo" />
+  </wsdl:message>
+  <wsdl:message name="VirtualEReleaseInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:VirtualEReleaseInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseByCtnNOAndVesselInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ReleaseByCtnNOAndVesselInfo" />
+  </wsdl:message>
+  <wsdl:message name="ReleaseByCtnNOAndVesselInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ReleaseByCtnNOAndVesselInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Release_B2BSoapIn">
+    <wsdl:part name="parameters" element="tns:Release_B2B" />
+  </wsdl:message>
+  <wsdl:message name="Release_B2BSoapOut">
+    <wsdl:part name="parameters" element="tns:Release_B2BResponse" />
+  </wsdl:message>
+  <wsdl:message name="Release_updateAutoStateSoapIn">
+    <wsdl:part name="parameters" element="tns:Release_updateAutoState" />
+  </wsdl:message>
+  <wsdl:message name="Release_updateAutoStateSoapOut">
+    <wsdl:part name="parameters" element="tns:Release_updateAutoStateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ReleaseSoap">
+    <wsdl:operation name="ReleaseAdd">
+      <wsdl:input message="tns:ReleaseAddSoapIn" />
+      <wsdl:output message="tns:ReleaseAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseAdd_NEW">
+      <wsdl:input message="tns:ReleaseAdd_NEWSoapIn" />
+      <wsdl:output message="tns:ReleaseAdd_NEWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseDel">
+      <wsdl:input message="tns:ReleaseDelSoapIn" />
+      <wsdl:output message="tns:ReleaseDelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseDel_NEW">
+      <wsdl:input message="tns:ReleaseDel_NEWSoapIn" />
+      <wsdl:output message="tns:ReleaseDel_NEWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VirtualEReleaseInfo">
+      <wsdl:input message="tns:VirtualEReleaseInfoSoapIn" />
+      <wsdl:output message="tns:VirtualEReleaseInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseByCtnNOAndVesselInfo">
+      <wsdl:input message="tns:ReleaseByCtnNOAndVesselInfoSoapIn" />
+      <wsdl:output message="tns:ReleaseByCtnNOAndVesselInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Release_B2B">
+      <wsdl:input message="tns:Release_B2BSoapIn" />
+      <wsdl:output message="tns:Release_B2BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Release_updateAutoState">
+      <wsdl:input message="tns:Release_updateAutoStateSoapIn" />
+      <wsdl:output message="tns:Release_updateAutoStateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReleaseSoap" type="tns:ReleaseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReleaseAdd">
+      <soap:operation soapAction="http://tempuri.org/ReleaseAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseAdd_NEW">
+      <soap:operation soapAction="http://tempuri.org/ReleaseAdd_NEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseDel">
+      <soap:operation soapAction="http://tempuri.org/ReleaseDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseDel_NEW">
+      <soap:operation soapAction="http://tempuri.org/ReleaseDel_NEW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VirtualEReleaseInfo">
+      <soap:operation soapAction="http://tempuri.org/VirtualEReleaseInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseByCtnNOAndVesselInfo">
+      <soap:operation soapAction="http://tempuri.org/ReleaseByCtnNOAndVesselInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Release_B2B">
+      <soap:operation soapAction="http://tempuri.org/Release_B2B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Release_updateAutoState">
+      <soap:operation soapAction="http://tempuri.org/Release_updateAutoState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReleaseSoap12" type="tns:ReleaseSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReleaseAdd">
+      <soap12:operation soapAction="http://tempuri.org/ReleaseAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseAdd_NEW">
+      <soap12:operation soapAction="http://tempuri.org/ReleaseAdd_NEW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseDel">
+      <soap12:operation soapAction="http://tempuri.org/ReleaseDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseDel_NEW">
+      <soap12:operation soapAction="http://tempuri.org/ReleaseDel_NEW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VirtualEReleaseInfo">
+      <soap12:operation soapAction="http://tempuri.org/VirtualEReleaseInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseByCtnNOAndVesselInfo">
+      <soap12:operation soapAction="http://tempuri.org/ReleaseByCtnNOAndVesselInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Release_B2B">
+      <soap12:operation soapAction="http://tempuri.org/Release_B2B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Release_updateAutoState">
+      <soap12:operation soapAction="http://tempuri.org/Release_updateAutoState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Release">
+    <wsdl:port name="ReleaseSoap" binding="tns:ReleaseSoap">
+      <soap:address location="http://172.16.11.51:9055/release.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReleaseSoap12" binding="tns:ReleaseSoap12">
+      <soap12:address location="http://172.16.11.51:9055/release.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

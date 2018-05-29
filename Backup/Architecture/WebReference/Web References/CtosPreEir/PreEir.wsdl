@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PreEirImportManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirImportManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PreEirImportManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirExportManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirExportManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PreEirExportManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirEmptyManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirEmptyManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PreEirEmptyManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirCombineManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirCombineManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PreEirCombineManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirCancel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreEirCancelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PreEirCancelResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="preEirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PreEirImportManageSoapIn">
+    <wsdl:part name="parameters" element="tns:PreEirImportManage" />
+  </wsdl:message>
+  <wsdl:message name="PreEirImportManageSoapOut">
+    <wsdl:part name="parameters" element="tns:PreEirImportManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreEirExportManageSoapIn">
+    <wsdl:part name="parameters" element="tns:PreEirExportManage" />
+  </wsdl:message>
+  <wsdl:message name="PreEirExportManageSoapOut">
+    <wsdl:part name="parameters" element="tns:PreEirExportManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreEirEmptyManageSoapIn">
+    <wsdl:part name="parameters" element="tns:PreEirEmptyManage" />
+  </wsdl:message>
+  <wsdl:message name="PreEirEmptyManageSoapOut">
+    <wsdl:part name="parameters" element="tns:PreEirEmptyManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreEirCombineManageSoapIn">
+    <wsdl:part name="parameters" element="tns:PreEirCombineManage" />
+  </wsdl:message>
+  <wsdl:message name="PreEirCombineManageSoapOut">
+    <wsdl:part name="parameters" element="tns:PreEirCombineManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreEirCancelSoapIn">
+    <wsdl:part name="parameters" element="tns:PreEirCancel" />
+  </wsdl:message>
+  <wsdl:message name="PreEirCancelSoapOut">
+    <wsdl:part name="parameters" element="tns:PreEirCancelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PreEirSoap">
+    <wsdl:operation name="PreEirImportManage">
+      <wsdl:input message="tns:PreEirImportManageSoapIn" />
+      <wsdl:output message="tns:PreEirImportManageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreEirExportManage">
+      <wsdl:input message="tns:PreEirExportManageSoapIn" />
+      <wsdl:output message="tns:PreEirExportManageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreEirEmptyManage">
+      <wsdl:input message="tns:PreEirEmptyManageSoapIn" />
+      <wsdl:output message="tns:PreEirEmptyManageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreEirCombineManage">
+      <wsdl:input message="tns:PreEirCombineManageSoapIn" />
+      <wsdl:output message="tns:PreEirCombineManageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreEirCancel">
+      <wsdl:input message="tns:PreEirCancelSoapIn" />
+      <wsdl:output message="tns:PreEirCancelSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PreEirSoap" type="tns:PreEirSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PreEirImportManage">
+      <soap:operation soapAction="http://tempuri.org/PreEirImportManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirExportManage">
+      <soap:operation soapAction="http://tempuri.org/PreEirExportManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirEmptyManage">
+      <soap:operation soapAction="http://tempuri.org/PreEirEmptyManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirCombineManage">
+      <soap:operation soapAction="http://tempuri.org/PreEirCombineManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirCancel">
+      <soap:operation soapAction="http://tempuri.org/PreEirCancel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PreEirSoap12" type="tns:PreEirSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PreEirImportManage">
+      <soap12:operation soapAction="http://tempuri.org/PreEirImportManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirExportManage">
+      <soap12:operation soapAction="http://tempuri.org/PreEirExportManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirEmptyManage">
+      <soap12:operation soapAction="http://tempuri.org/PreEirEmptyManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirCombineManage">
+      <soap12:operation soapAction="http://tempuri.org/PreEirCombineManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreEirCancel">
+      <soap12:operation soapAction="http://tempuri.org/PreEirCancel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PreEir">
+    <wsdl:port name="PreEirSoap" binding="tns:PreEirSoap">
+      <soap:address location="http://172.16.11.51:9055/PreEir.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PreEirSoap12" binding="tns:PreEirSoap12">
+      <soap12:address location="http://172.16.11.51:9055/PreEir.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,191 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1089A7A2-8012-4A48-ABAB-87D9B54EF611}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCRX.WIN</RootNamespace>
+    <AssemblyName>OCRX.WIN</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fmExcepInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmExcepInput.Designer.cs">
+      <DependentUpon>fmExcepInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMain.Designer.cs">
+      <DependentUpon>fmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMonitor.Designer.cs">
+      <DependentUpon>fmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmSearch.Designer.cs">
+      <DependentUpon>fmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmUsers.Designer.cs">
+      <DependentUpon>fmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmVessel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmVessel.Designer.cs">
+      <DependentUpon>fmVessel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmExcepInput.resx">
+      <DependentUpon>fmExcepInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMain.resx">
+      <DependentUpon>fmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMonitor.resx">
+      <DependentUpon>fmMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmSearch.resx">
+      <DependentUpon>fmSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmUsers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmVessel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fmVessel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmBarge.resx">
+      <DependentUpon>fmBarge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmExpHandle.resx">
+      <DependentUpon>fmExpHandle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptMonitor.rdlc" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="fmBarge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmBarge.Designer.cs">
+      <DependentUpon>fmBarge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmExpHandle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmExpHandle.Designer.cs">
+      <DependentUpon>fmExpHandle.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Architecture\Common\CCT.Common.csproj">
+      <Project>{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1}</Project>
+      <Name>CCT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Architecture\SystemFramework\CCT.SystemFramework.csproj">
+      <Project>{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}</Project>
+      <Name>CCT.SystemFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OCR\OCR.Model\OCR.Model.csproj">
+      <Project>{B5C86E92-D417-4EC7-AF9D-F3FFE1DFB38C}</Project>
+      <Name>OCR.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OCR\OCR.WIN\OCR.WIN.csproj">
+      <Project>{D8382CD8-25D0-43B9-938A-B9F0F290887A}</Project>
+      <Name>OCR.WIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCRX.BLL\OCRX.BLL.csproj">
+      <Project>{C7C9CD9D-6CB3-4B1F-8F3D-0F1E80A7EBEC}</Project>
+      <Name>OCRX.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCRX.Model\OCRX.Model.csproj">
+      <Project>{F20541B8-DE53-48D1-9861-A471D352AB7A}</Project>
+      <Name>OCRX.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

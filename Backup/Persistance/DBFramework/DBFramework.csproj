@@ -1,0 +1,85 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{223BA832-E2D5-4CCF-8880-FDB4A2CE0689}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBFramework</RootNamespace>
+    <AssemblyName>DBFramework</AssemblyName>
+    
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MSIL\CommandContainer.cs" />
+    <Compile Include="MSIL\DynamicClass.cs" />
+    <Compile Include="DBContext.cs" />
+    <Compile Include="Drivers\TransactionContainer.cs" />
+    <Compile Include="MSIL\DynamicBuilder.cs" />
+    <Compile Include="Runners\AbstractRunner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Runners\AbstractRunner.ORMapping.cs" />
+    <Compile Include="Runners\AbstractRunner.Table.cs" />
+    <Compile Include="Runners\MsSqlRunner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Runners\OleDbRunner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Runners\OracleRunner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\AbstractDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\OleDbDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\OracleDriver.cs" />
+    <Compile Include="Drivers\MsSqlDriver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlUtil.cs" />
+    <Compile Include="MappingInfo.cs" />
+    <Compile Include="XDataReader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mapping\DBFramework.Mapping.csproj">
+      <Project>{1977E5E6-0C7A-4797-8842-996627297C39}</Project>
+      <Name>DBFramework.Mapping</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

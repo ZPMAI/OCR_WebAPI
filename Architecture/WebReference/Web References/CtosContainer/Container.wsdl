@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ContainerDamageManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContainerDamageManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContainerDamageManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmDischarge">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmDischargeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfirmDischargeResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmLoad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmLoadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfirmLoadResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveContainers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MoveContainersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MoveContainersResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContainerUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContainerUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContainerUpdateResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="containers">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ContainerDamageManageSoapIn">
+    <wsdl:part name="parameters" element="tns:ContainerDamageManage" />
+  </wsdl:message>
+  <wsdl:message name="ContainerDamageManageSoapOut">
+    <wsdl:part name="parameters" element="tns:ContainerDamageManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmDischargeSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmDischarge" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmDischargeSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmDischargeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmLoadSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmLoad" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmLoadSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmLoadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MoveContainersSoapIn">
+    <wsdl:part name="parameters" element="tns:MoveContainers" />
+  </wsdl:message>
+  <wsdl:message name="MoveContainersSoapOut">
+    <wsdl:part name="parameters" element="tns:MoveContainersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContainerUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ContainerUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ContainerUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ContainerUpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ContainerSoap">
+    <wsdl:operation name="ContainerDamageManage">
+      <wsdl:input message="tns:ContainerDamageManageSoapIn" />
+      <wsdl:output message="tns:ContainerDamageManageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDischarge">
+      <wsdl:input message="tns:ConfirmDischargeSoapIn" />
+      <wsdl:output message="tns:ConfirmDischargeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmLoad">
+      <wsdl:input message="tns:ConfirmLoadSoapIn" />
+      <wsdl:output message="tns:ConfirmLoadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveContainers">
+      <wsdl:input message="tns:MoveContainersSoapIn" />
+      <wsdl:output message="tns:MoveContainersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContainerUpdate">
+      <wsdl:input message="tns:ContainerUpdateSoapIn" />
+      <wsdl:output message="tns:ContainerUpdateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ContainerSoap" type="tns:ContainerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ContainerDamageManage">
+      <soap:operation soapAction="http://tempuri.org/ContainerDamageManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDischarge">
+      <soap:operation soapAction="http://tempuri.org/ConfirmDischarge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmLoad">
+      <soap:operation soapAction="http://tempuri.org/ConfirmLoad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveContainers">
+      <soap:operation soapAction="http://tempuri.org/MoveContainers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContainerUpdate">
+      <soap:operation soapAction="http://tempuri.org/ContainerUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ContainerSoap12" type="tns:ContainerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ContainerDamageManage">
+      <soap12:operation soapAction="http://tempuri.org/ContainerDamageManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDischarge">
+      <soap12:operation soapAction="http://tempuri.org/ConfirmDischarge" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmLoad">
+      <soap12:operation soapAction="http://tempuri.org/ConfirmLoad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveContainers">
+      <soap12:operation soapAction="http://tempuri.org/MoveContainers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContainerUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ContainerUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Container">
+    <wsdl:port name="ContainerSoap" binding="tns:ContainerSoap">
+      <soap:address location="http://172.16.11.51:9055/Container.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ContainerSoap12" binding="tns:ContainerSoap12">
+      <soap12:address location="http://172.16.11.51:9055/Container.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

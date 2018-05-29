@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{902E9791-7D1B-4D06-B4EC-25B7DF89A1D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCRX.Web.DAL</RootNamespace>
+    <AssemblyName>OCRX.Web.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Connected Services\CtosWebReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="CTOSApi.cs" />
+    <Compile Include="OCRDbContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\HttpUtility.cs" />
+    <Compile Include="webDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Architecture\Common\CCT.Common.csproj">
+      <Project>{e06725eb-fc78-4428-a1a6-ebbbf7aa42a1}</Project>
+      <Name>CCT.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Architecture\SystemFramework\CCT.SystemFramework.csproj">
+      <Project>{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}</Project>
+      <Name>CCT.SystemFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCRX\OCRX.Model\OCRX.Model.csproj">
+      <Project>{F20541B8-DE53-48D1-9861-A471D352AB7A}</Project>
+      <Name>OCRX.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCR\OCR.Model\OCR.Model.csproj">
+      <Project>{B5C86E92-D417-4EC7-AF9D-F3FFE1DFB38C}</Project>
+      <Name>OCR.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistance\DBFramework\DBFramework.csproj">
+      <Project>{223ba832-e2d5-4ccf-8880-fdb4a2ce0689}</Project>
+      <Name>DBFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\CtosWebReference\OCRService.wsdl" />
+    <None Include="Connected Services\CtosWebReference\OCRX.Web.DAL.CtosWebReference.CM005001Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CtosWebReference\OCRX.Web.DAL.CtosWebReference.OP007095Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CtosWebReference\OCRX.Web.DAL.CtosWebReference.SM001001Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CtosWebReference\OCRX.Web.DAL.CtosWebReference.SM001002Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\CtosWebReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CtosWebReference\OCRService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CtosWebReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CtosWebReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CtosWebReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

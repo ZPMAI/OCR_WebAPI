@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns1="http://service.pub.gyt.service.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IGangKouShuJuJiaoHuanService" targetNamespace="http://service.pub.gyt.service.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://service.pub.gyt.service.com/" elementFormDefault="unqualified" targetNamespace="http://service.pub.gyt.service.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="SendGytJinChuGangCheRenYuanXixi" type="tns:SendGytJinChuGangCheRenYuanXixi" />
+      <xs:element name="SendGytJinChuGangCheRenYuanXixiResponse" type="tns:SendGytJinChuGangCheRenYuanXixiResponse" />
+      <xs:element name="addGytIcKaSynchronizedOperator" type="tns:addGytIcKaSynchronizedOperator" />
+      <xs:element name="addGytIcKaSynchronizedOperatorResponse" type="tns:addGytIcKaSynchronizedOperatorResponse" />
+      <xs:element name="qryDaoLuYunShuCyryXinxi" type="tns:qryDaoLuYunShuCyryXinxi" />
+      <xs:element name="qryDaoLuYunShuCyryXinxiResponse" type="tns:qryDaoLuYunShuCyryXinxiResponse" />
+      <xs:complexType name="qryDaoLuYunShuCyryXinxi">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="xmlDoc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qryDaoLuYunShuCyryXinxiResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SendGytJinChuGangCheRenYuanXixi">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="xmlDoc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SendGytJinChuGangCheRenYuanXixiResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="addGytIcKaSynchronizedOperator">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="xmlDoc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="addGytIcKaSynchronizedOperatorResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="qryDaoLuYunShuCyryXinxi">
+    <wsdl:part name="parameters" element="ns1:qryDaoLuYunShuCyryXinxi" />
+  </wsdl:message>
+  <wsdl:message name="addGytIcKaSynchronizedOperatorResponse">
+    <wsdl:part name="parameters" element="ns1:addGytIcKaSynchronizedOperatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendGytJinChuGangCheRenYuanXixi">
+    <wsdl:part name="parameters" element="ns1:SendGytJinChuGangCheRenYuanXixi" />
+  </wsdl:message>
+  <wsdl:message name="SendGytJinChuGangCheRenYuanXixiResponse">
+    <wsdl:part name="parameters" element="ns1:SendGytJinChuGangCheRenYuanXixiResponse" />
+  </wsdl:message>
+  <wsdl:message name="addGytIcKaSynchronizedOperator">
+    <wsdl:part name="parameters" element="ns1:addGytIcKaSynchronizedOperator" />
+  </wsdl:message>
+  <wsdl:message name="qryDaoLuYunShuCyryXinxiResponse">
+    <wsdl:part name="parameters" element="ns1:qryDaoLuYunShuCyryXinxiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGangKouShuJuJiaoHuanService">
+    <wsdl:operation name="qryDaoLuYunShuCyryXinxi">
+      <wsdl:input name="qryDaoLuYunShuCyryXinxi" message="ns1:qryDaoLuYunShuCyryXinxi" />
+      <wsdl:output name="qryDaoLuYunShuCyryXinxiResponse" message="ns1:qryDaoLuYunShuCyryXinxiResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGytJinChuGangCheRenYuanXixi">
+      <wsdl:input name="SendGytJinChuGangCheRenYuanXixi" message="ns1:SendGytJinChuGangCheRenYuanXixi" />
+      <wsdl:output name="SendGytJinChuGangCheRenYuanXixiResponse" message="ns1:SendGytJinChuGangCheRenYuanXixiResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addGytIcKaSynchronizedOperator">
+      <wsdl:input name="addGytIcKaSynchronizedOperator" message="ns1:addGytIcKaSynchronizedOperator" />
+      <wsdl:output name="addGytIcKaSynchronizedOperatorResponse" message="ns1:addGytIcKaSynchronizedOperatorResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

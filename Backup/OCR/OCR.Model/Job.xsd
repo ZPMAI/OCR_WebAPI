@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Job" targetNamespace="http://tempuri.org/Job.xsd" xmlns:mstns="http://tempuri.org/Job.xsd" xmlns="http://tempuri.org/Job.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.OCR.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Job" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Job" msprop:Generator_DataSetName="Job">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_OCR_JOB" msprop:Generator_UserTableName="T_OCR_JOB" msprop:Generator_RowDeletedName="T_OCR_JOBRowDeleted" msprop:Generator_RowChangedName="T_OCR_JOBRowChanged" msprop:Generator_RowClassName="T_OCR_JOBRow" msprop:Generator_RowChangingName="T_OCR_JOBRowChanging" msprop:Generator_RowEvArgName="T_OCR_JOBRowChangeEvent" msprop:Generator_RowEvHandlerName="T_OCR_JOBRowChangeEventHandler" msprop:Generator_TableClassName="T_OCR_JOBDataTable" msprop:Generator_TableVarName="tableT_OCR_JOB" msprop:Generator_RowDeletingName="T_OCR_JOBRowDeleting" msprop:Generator_TablePropName="T_OCR_JOB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JOBID" msprop:Generator_UserColumnName="JOBID" msprop:Generator_ColumnPropNameInRow="JOBID" msprop:Generator_ColumnVarNameInTable="columnJOBID" msprop:Generator_ColumnPropNameInTable="JOBIDColumn" type="xs:decimal" />
+              <xs:element name="JOBNAME" msprop:Generator_UserColumnName="JOBNAME" msprop:Generator_ColumnPropNameInRow="JOBNAME" msprop:Generator_ColumnVarNameInTable="columnJOBNAME" msprop:Generator_ColumnPropNameInTable="JOBNAMEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JOBDESC" msprop:Generator_UserColumnName="JOBDESC" msprop:Generator_ColumnPropNameInRow="JOBDESC" msprop:Generator_ColumnVarNameInTable="columnJOBDESC" msprop:Generator_ColumnPropNameInTable="JOBDESCColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NEXTEXECTIME" msprop:Generator_UserColumnName="NEXTEXECTIME" msprop:Generator_ColumnPropNameInRow="NEXTEXECTIME" msprop:Generator_ColumnVarNameInTable="columnNEXTEXECTIME" msprop:Generator_ColumnPropNameInTable="NEXTEXECTIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INTERVAL" msprop:Generator_UserColumnName="INTERVAL" msprop:Generator_ColumnPropNameInRow="INTERVAL" msprop:Generator_ColumnVarNameInTable="columnINTERVAL" msprop:Generator_ColumnPropNameInTable="INTERVALColumn" type="xs:decimal" />
+              <xs:element name="STATE" msprop:Generator_UserColumnName="STATE" msprop:Generator_ColumnPropNameInRow="STATE" msprop:Generator_ColumnVarNameInTable="columnSTATE" msprop:Generator_ColumnPropNameInTable="STATEColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIT" msprop:Generator_UserColumnName="UNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAILTO" msprop:Generator_UserColumnName="EMAILTO" msprop:Generator_ColumnPropNameInRow="EMAILTO" msprop:Generator_ColumnVarNameInTable="columnEMAILTO" msprop:Generator_ColumnPropNameInTable="EMAILTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAILCC" msprop:Generator_UserColumnName="EMAILCC" msprop:Generator_ColumnPropNameInRow="EMAILCC" msprop:Generator_ColumnVarNameInTable="columnEMAILCC" msprop:Generator_ColumnPropNameInTable="EMAILCCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JOBRESULT" msprop:Generator_UserColumnName="JOBRESULT" msprop:Generator_ColumnVarNameInTable="columnJOBRESULT" msprop:Generator_ColumnPropNameInRow="JOBRESULT" msprop:Generator_ColumnPropNameInTable="JOBRESULTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SUBJECT" msprop:Generator_UserColumnName="SUBJECT" msprop:Generator_ColumnPropNameInRow="SUBJECT" msprop:Generator_ColumnVarNameInTable="columnSUBJECT" msprop:Generator_ColumnPropNameInTable="SUBJECTColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

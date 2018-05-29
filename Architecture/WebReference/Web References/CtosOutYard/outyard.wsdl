@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConfirmWorkitemD2Y">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="outYard">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmWorkitemD2YResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfirmWorkitemD2YResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="outYard">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmWorkitemY2D">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="outYard">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmWorkitemY2DResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfirmWorkitemY2DResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="outYard">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConfirmWorkitemD2YSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmWorkitemD2Y" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmWorkitemD2YSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmWorkitemD2YResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmWorkitemY2DSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmWorkitemY2D" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmWorkitemY2DSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmWorkitemY2DResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OutYardSoap">
+    <wsdl:operation name="ConfirmWorkitemD2Y">
+      <wsdl:input message="tns:ConfirmWorkitemD2YSoapIn" />
+      <wsdl:output message="tns:ConfirmWorkitemD2YSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmWorkitemY2D">
+      <wsdl:input message="tns:ConfirmWorkitemY2DSoapIn" />
+      <wsdl:output message="tns:ConfirmWorkitemY2DSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OutYardSoap" type="tns:OutYardSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConfirmWorkitemD2Y">
+      <soap:operation soapAction="http://tempuri.org/ConfirmWorkitemD2Y" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmWorkitemY2D">
+      <soap:operation soapAction="http://tempuri.org/ConfirmWorkitemY2D" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OutYardSoap12" type="tns:OutYardSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConfirmWorkitemD2Y">
+      <soap12:operation soapAction="http://tempuri.org/ConfirmWorkitemD2Y" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmWorkitemY2D">
+      <soap12:operation soapAction="http://tempuri.org/ConfirmWorkitemY2D" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OutYard">
+    <wsdl:port name="OutYardSoap" binding="tns:OutYardSoap">
+      <soap:address location="http://172.16.11.81:6666/outyard.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OutYardSoap12" binding="tns:OutYardSoap12">
+      <soap12:address location="http://172.16.11.81:6666/outyard.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

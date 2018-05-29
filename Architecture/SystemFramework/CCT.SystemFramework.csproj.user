@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <ReferencePath>D:\Projects\201011生产业务系统\源代码\DLL\</ReferencePath>
+  </PropertyGroup>
+</Project>

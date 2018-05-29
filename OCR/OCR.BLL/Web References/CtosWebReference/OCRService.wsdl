@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SM001001">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SM001001Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SM001001Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SM001002">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SM001002Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SM001002Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007001">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007001Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007001Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007002">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007002Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007002Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007030">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007030Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007030Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007006">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007006Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007006Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007032">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007032Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007032Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007036">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007036Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007036Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM005001">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CM005001Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CM005001Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VM002001">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VM002001Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VM002001Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007031">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007031Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007031Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007037">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007037Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007037Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007095">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OP007095Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OP007095Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SM001001SoapIn">
+    <wsdl:part name="parameters" element="tns:SM001001" />
+  </wsdl:message>
+  <wsdl:message name="SM001001SoapOut">
+    <wsdl:part name="parameters" element="tns:SM001001Response" />
+  </wsdl:message>
+  <wsdl:message name="SM001002SoapIn">
+    <wsdl:part name="parameters" element="tns:SM001002" />
+  </wsdl:message>
+  <wsdl:message name="SM001002SoapOut">
+    <wsdl:part name="parameters" element="tns:SM001002Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007001SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007001" />
+  </wsdl:message>
+  <wsdl:message name="OP007001SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007001Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007002SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007002" />
+  </wsdl:message>
+  <wsdl:message name="OP007002SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007002Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007030SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007030" />
+  </wsdl:message>
+  <wsdl:message name="OP007030SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007030Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007006SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007006" />
+  </wsdl:message>
+  <wsdl:message name="OP007006SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007006Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007032SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007032" />
+  </wsdl:message>
+  <wsdl:message name="OP007032SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007032Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007036SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007036" />
+  </wsdl:message>
+  <wsdl:message name="OP007036SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007036Response" />
+  </wsdl:message>
+  <wsdl:message name="CM005001SoapIn">
+    <wsdl:part name="parameters" element="tns:CM005001" />
+  </wsdl:message>
+  <wsdl:message name="CM005001SoapOut">
+    <wsdl:part name="parameters" element="tns:CM005001Response" />
+  </wsdl:message>
+  <wsdl:message name="VM002001SoapIn">
+    <wsdl:part name="parameters" element="tns:VM002001" />
+  </wsdl:message>
+  <wsdl:message name="VM002001SoapOut">
+    <wsdl:part name="parameters" element="tns:VM002001Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007031SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007031" />
+  </wsdl:message>
+  <wsdl:message name="OP007031SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007031Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007037SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007037" />
+  </wsdl:message>
+  <wsdl:message name="OP007037SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007037Response" />
+  </wsdl:message>
+  <wsdl:message name="OP007095SoapIn">
+    <wsdl:part name="parameters" element="tns:OP007095" />
+  </wsdl:message>
+  <wsdl:message name="OP007095SoapOut">
+    <wsdl:part name="parameters" element="tns:OP007095Response" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="SM001001">
+      <wsdl:input message="tns:SM001001SoapIn" />
+      <wsdl:output message="tns:SM001001SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SM001002">
+      <wsdl:input message="tns:SM001002SoapIn" />
+      <wsdl:output message="tns:SM001002SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007001">
+      <wsdl:input message="tns:OP007001SoapIn" />
+      <wsdl:output message="tns:OP007001SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007002">
+      <wsdl:input message="tns:OP007002SoapIn" />
+      <wsdl:output message="tns:OP007002SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007030">
+      <wsdl:input message="tns:OP007030SoapIn" />
+      <wsdl:output message="tns:OP007030SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007006">
+      <wsdl:input message="tns:OP007006SoapIn" />
+      <wsdl:output message="tns:OP007006SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007032">
+      <wsdl:input message="tns:OP007032SoapIn" />
+      <wsdl:output message="tns:OP007032SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007036">
+      <wsdl:input message="tns:OP007036SoapIn" />
+      <wsdl:output message="tns:OP007036SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CM005001">
+      <wsdl:input message="tns:CM005001SoapIn" />
+      <wsdl:output message="tns:CM005001SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VM002001">
+      <wsdl:input message="tns:VM002001SoapIn" />
+      <wsdl:output message="tns:VM002001SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007031">
+      <wsdl:input message="tns:OP007031SoapIn" />
+      <wsdl:output message="tns:OP007031SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007037">
+      <wsdl:input message="tns:OP007037SoapIn" />
+      <wsdl:output message="tns:OP007037SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OP007095">
+      <wsdl:input message="tns:OP007095SoapIn" />
+      <wsdl:output message="tns:OP007095SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SM001001">
+      <soap:operation soapAction="http://tempuri.org/SM001001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SM001002">
+      <soap:operation soapAction="http://tempuri.org/SM001002" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007001">
+      <soap:operation soapAction="http://tempuri.org/OP007001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007002">
+      <soap:operation soapAction="http://tempuri.org/OP007002" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007030">
+      <soap:operation soapAction="http://tempuri.org/OP007030" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007006">
+      <soap:operation soapAction="http://tempuri.org/OP007006" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007032">
+      <soap:operation soapAction="http://tempuri.org/OP007032" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007036">
+      <soap:operation soapAction="http://tempuri.org/OP007036" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM005001">
+      <soap:operation soapAction="http://tempuri.org/CM005001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VM002001">
+      <soap:operation soapAction="http://tempuri.org/VM002001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007031">
+      <soap:operation soapAction="http://tempuri.org/OP007031" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007037">
+      <soap:operation soapAction="http://tempuri.org/OP007037" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007095">
+      <soap:operation soapAction="http://tempuri.org/OP007095" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SM001001">
+      <soap12:operation soapAction="http://tempuri.org/SM001001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SM001002">
+      <soap12:operation soapAction="http://tempuri.org/SM001002" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007001">
+      <soap12:operation soapAction="http://tempuri.org/OP007001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007002">
+      <soap12:operation soapAction="http://tempuri.org/OP007002" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007030">
+      <soap12:operation soapAction="http://tempuri.org/OP007030" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007006">
+      <soap12:operation soapAction="http://tempuri.org/OP007006" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007032">
+      <soap12:operation soapAction="http://tempuri.org/OP007032" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007036">
+      <soap12:operation soapAction="http://tempuri.org/OP007036" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM005001">
+      <soap12:operation soapAction="http://tempuri.org/CM005001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VM002001">
+      <soap12:operation soapAction="http://tempuri.org/VM002001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007031">
+      <soap12:operation soapAction="http://tempuri.org/OP007031" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007037">
+      <soap12:operation soapAction="http://tempuri.org/OP007037" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OP007095">
+      <soap12:operation soapAction="http://tempuri.org/OP007095" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://10.1.3.28:8688/OCRService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://10.1.3.28:8688/OCRService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

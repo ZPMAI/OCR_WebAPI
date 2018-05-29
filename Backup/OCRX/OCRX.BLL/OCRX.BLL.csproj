@@ -1,0 +1,83 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7C9CD9D-6CB3-4B1F-8F3D-0F1E80A7EBEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCRX.BLL</RootNamespace>
+    <AssemblyName>OCRX.BLL</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DispatchBLL.cs" />
+    <Compile Include="MainBLL.cs" />
+    <Compile Include="MonitorBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchBLL.cs" />
+    <Compile Include="UsersBLL.cs" />
+    <Compile Include="ValidateBLL.cs" />
+    <Compile Include="VesselBLL.cs" />
+    <Compile Include="BargeBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Architecture\SystemFramework\CCT.SystemFramework.csproj">
+      <Project>{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}</Project>
+      <Name>CCT.SystemFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OCR\OCR.BLL\OCR.BLL.csproj">
+      <Project>{5E7B86E0-ABCC-4D40-94A9-C6036976BEBE}</Project>
+      <Name>OCR.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OCR\OCR.DAL\OCR.DAL.csproj">
+      <Project>{4D78C477-FB24-4E8B-BAB2-7CCB9C7D5CA7}</Project>
+      <Name>OCR.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OCR\OCR.Model\OCR.Model.csproj">
+      <Project>{B5C86E92-D417-4EC7-AF9D-F3FFE1DFB38C}</Project>
+      <Name>OCR.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCRX.DAL\OCRX.DAL.csproj">
+      <Project>{AF4FE5C3-E65F-4791-8F9E-81FD7816910D}</Project>
+      <Name>OCRX.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OCRX.Model\OCRX.Model.csproj">
+      <Project>{F20541B8-DE53-48D1-9861-A471D352AB7A}</Project>
+      <Name>OCRX.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

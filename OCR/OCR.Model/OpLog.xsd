@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OpLog" targetNamespace="http://tempuri.org/OpLog.xsd" xmlns:mstns="http://tempuri.org/OpLog.xsd" xmlns="http://tempuri.org/OpLog.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.OCR.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OpLog" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OpLog" msprop:Generator_DataSetName="OpLog">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_OCR_LOG" msprop:Generator_UserTableName="T_OCR_LOG" msprop:Generator_RowDeletedName="T_OCR_LOGRowDeleted" msprop:Generator_TableClassName="T_OCR_LOGDataTable" msprop:Generator_RowChangedName="T_OCR_LOGRowChanged" msprop:Generator_RowClassName="T_OCR_LOGRow" msprop:Generator_RowChangingName="T_OCR_LOGRowChanging" msprop:Generator_RowEvArgName="T_OCR_LOGRowChangeEvent" msprop:Generator_RowEvHandlerName="T_OCR_LOGRowChangeEventHandler" msprop:Generator_TablePropName="T_OCR_LOG" msprop:Generator_TableVarName="tableT_OCR_LOG" msprop:Generator_RowDeletingName="T_OCR_LOGRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LOGID" msprop:Generator_UserColumnName="LOGID" msprop:Generator_ColumnPropNameInRow="LOGID" msprop:Generator_ColumnVarNameInTable="columnLOGID" msprop:Generator_ColumnPropNameInTable="LOGIDColumn" type="xs:decimal" />
+              <xs:element name="TABLENAME" msprop:Generator_UserColumnName="TABLENAME" msprop:Generator_ColumnPropNameInRow="TABLENAME" msprop:Generator_ColumnVarNameInTable="columnTABLENAME" msprop:Generator_ColumnPropNameInTable="TABLENAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COLNAME" msprop:Generator_UserColumnName="COLNAME" msprop:Generator_ColumnPropNameInRow="COLNAME" msprop:Generator_ColumnVarNameInTable="columnCOLNAME" msprop:Generator_ColumnPropNameInTable="COLNAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OLDVALUE" msprop:Generator_UserColumnName="OLDVALUE" msprop:Generator_ColumnPropNameInRow="OLDVALUE" msprop:Generator_ColumnVarNameInTable="columnOLDVALUE" msprop:Generator_ColumnPropNameInTable="OLDVALUEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NEWVALUE" msprop:Generator_UserColumnName="NEWVALUE" msprop:Generator_ColumnPropNameInRow="NEWVALUE" msprop:Generator_ColumnVarNameInTable="columnNEWVALUE" msprop:Generator_ColumnPropNameInTable="NEWVALUEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPDATEDBY" msprop:Generator_UserColumnName="UPDATEDBY" msprop:Generator_ColumnPropNameInRow="UPDATEDBY" msprop:Generator_ColumnVarNameInTable="columnUPDATEDBY" msprop:Generator_ColumnPropNameInTable="UPDATEDBYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UPDATETIME" msprop:Generator_UserColumnName="UPDATETIME" msprop:Generator_ColumnPropNameInRow="UPDATETIME" msprop:Generator_ColumnVarNameInTable="columnUPDATETIME" msprop:Generator_ColumnPropNameInTable="UPDATETIMEColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

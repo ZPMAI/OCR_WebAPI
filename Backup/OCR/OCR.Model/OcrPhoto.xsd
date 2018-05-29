@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OcrPhoto" targetNamespace="http://tempuri.org/OcrPhoto.xsd" xmlns:mstns="http://tempuri.org/OcrPhoto.xsd" xmlns="http://tempuri.org/OcrPhoto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.OCR.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OcrPhoto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OcrPhoto" msprop:Generator_DataSetName="OcrPhoto">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_OCR_PHOTO" msprop:Generator_UserTableName="T_OCR_PHOTO" msprop:Generator_RowDeletedName="T_OCR_PHOTORowDeleted" msprop:Generator_TableClassName="T_OCR_PHOTODataTable" msprop:Generator_RowChangedName="T_OCR_PHOTORowChanged" msprop:Generator_RowClassName="T_OCR_PHOTORow" msprop:Generator_RowChangingName="T_OCR_PHOTORowChanging" msprop:Generator_RowEvArgName="T_OCR_PHOTORowChangeEvent" msprop:Generator_RowEvHandlerName="T_OCR_PHOTORowChangeEventHandler" msprop:Generator_TablePropName="T_OCR_PHOTO" msprop:Generator_TableVarName="tableT_OCR_PHOTO" msprop:Generator_RowDeletingName="T_OCR_PHOTORowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PHOTO_ID" msprop:Generator_UserColumnName="PHOTO_ID" msprop:Generator_ColumnPropNameInRow="PHOTO_ID" msprop:Generator_ColumnVarNameInTable="columnPHOTO_ID" msprop:Generator_ColumnPropNameInTable="PHOTO_IDColumn" type="xs:decimal" />
+              <xs:element name="ISARCHIVED" msprop:Generator_UserColumnName="ISARCHIVED" msprop:Generator_ColumnPropNameInRow="ISARCHIVED" msprop:Generator_ColumnVarNameInTable="columnISARCHIVED" msprop:Generator_ColumnPropNameInTable="ISARCHIVEDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOCK_ID" msprop:Generator_UserColumnName="DOCK_ID" msprop:Generator_ColumnPropNameInRow="DOCK_ID" msprop:Generator_ColumnVarNameInTable="columnDOCK_ID" msprop:Generator_ColumnPropNameInTable="DOCK_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PHOTO_URL" msprop:Generator_UserColumnName="PHOTO_URL" msprop:Generator_ColumnPropNameInRow="PHOTO_URL" msprop:Generator_ColumnVarNameInTable="columnPHOTO_URL" msprop:Generator_ColumnPropNameInTable="PHOTO_URLColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="512" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTIME" msprop:Generator_UserColumnName="CTIME" msprop:Generator_ColumnPropNameInRow="CTIME" msprop:Generator_ColumnVarNameInTable="columnCTIME" msprop:Generator_ColumnPropNameInTable="CTIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PHOTO_NAME" msprop:Generator_UserColumnName="PHOTO_NAME" msprop:Generator_ColumnPropNameInRow="PHOTO_NAME" msprop:Generator_ColumnVarNameInTable="columnPHOTO_NAME" msprop:Generator_ColumnPropNameInTable="PHOTO_NAMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PHOTO_POS" msprop:Generator_UserColumnName="PHOTO_POS" msprop:Generator_ColumnPropNameInRow="PHOTO_POS" msprop:Generator_ColumnVarNameInTable="columnPHOTO_POS" msprop:Generator_ColumnPropNameInTable="PHOTO_POSColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CONT_ORDER" msprop:Generator_UserColumnName="CONT_ORDER" msprop:Generator_ColumnPropNameInRow="CONT_ORDER" msprop:Generator_ColumnVarNameInTable="columnCONT_ORDER" msprop:Generator_ColumnPropNameInTable="CONT_ORDERColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COPYTIME" msprop:Generator_UserColumnName="COPYTIME" msprop:Generator_ColumnPropNameInRow="COPYTIME" msprop:Generator_ColumnVarNameInTable="columnCOPYTIME" msprop:Generator_ColumnPropNameInTable="COPYTIMEColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

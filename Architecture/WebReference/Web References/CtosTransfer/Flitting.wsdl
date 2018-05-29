@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="FlittingManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="flittings">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FlittingManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FlittingManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="flittings">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FlittingManageSoapIn">
+    <wsdl:part name="parameters" element="tns:FlittingManage" />
+  </wsdl:message>
+  <wsdl:message name="FlittingManageSoapOut">
+    <wsdl:part name="parameters" element="tns:FlittingManageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FlittingSoap">
+    <wsdl:operation name="FlittingManage">
+      <wsdl:input message="tns:FlittingManageSoapIn" />
+      <wsdl:output message="tns:FlittingManageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FlittingSoap" type="tns:FlittingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FlittingManage">
+      <soap:operation soapAction="http://tempuri.org/FlittingManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlittingSoap12" type="tns:FlittingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FlittingManage">
+      <soap12:operation soapAction="http://tempuri.org/FlittingManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Flitting">
+    <wsdl:port name="FlittingSoap" binding="tns:FlittingSoap">
+      <soap:address location="http://172.16.11.51:9055/Flitting.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlittingSoap12" binding="tns:FlittingSoap12">
+      <soap12:address location="http://172.16.11.51:9055/Flitting.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

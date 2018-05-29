@@ -1,0 +1,8 @@
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\ResolveAssemblyReference.cache
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\Interop.Microsoft.Office.Core.dll
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\Interop.VBIDE.dll
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\CCT.SystemFramework.csproj.ResolveComReference.cache
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\CCT.SystemFramework.ReportingService.FrmShow.resources
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\CCT.SystemFramework.csproj.GenerateResource.Cache
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\Interop.Excel.dll
+F:\WORK\应用程序\DOT NET 2005应用\业务应用系统\Architecture\SystemFramework\obj\Debug\Interop.Outlook.dll

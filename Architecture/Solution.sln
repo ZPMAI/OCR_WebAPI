@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture", "Architecture", "{C6126E10-6536-43C6-981C-DA704B8C6FD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCT.Common", "Common\CCT.Common.csproj", "{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCT.MainFrame", "MainFrame\CCT.MainFrame.csproj", "{A5BBF5CD-3BE7-47FD-A223-6972A1997019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCT.SystemFramework", "SystemFramework\CCT.SystemFramework.csproj", "{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCT.WebReference", "WebReference\CCT.WebReference.csproj", "{DDAB3941-0033-4BAF-A1FB-75E438F5CA08}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectUniqueName0 = Common\\CCT.Common.csproj
+		SccProjectTopLevelParentUniqueName0 = Solution.sln
+		SccProjectName0 = \u0022$/技术文档/201011(生产业务系统)/源代码/Solution/Architecture/Common\u0022,\u0020TQMGAAAA
+		SccLocalPath0 = Common
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = MainFrame\\CCT.MainFrame.csproj
+		SccProjectTopLevelParentUniqueName1 = Solution.sln
+		SccProjectName1 = \u0022$/技术文档/201011(生产业务系统)/源代码/Solution/Architecture/MainFrame\u0022,\u0020VQMGAAAA
+		SccLocalPath1 = MainFrame
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = SystemFramework\\CCT.SystemFramework.csproj
+		SccProjectTopLevelParentUniqueName2 = Solution.sln
+		SccProjectName2 = \u0022$/技术文档/201011(生产业务系统)/源代码/Solution/Architecture/SystemFramework\u0022,\u0020CQNGAAAA
+		SccLocalPath2 = SystemFramework
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = WebReference\\CCT.WebReference.csproj
+		SccProjectTopLevelParentUniqueName3 = Solution.sln
+		SccProjectName3 = \u0022$/技术文档/201011(生产业务系统)/源代码/Solution/Architecture/WebReference\u0022,\u0020XQMGAAAA
+		SccLocalPath3 = WebReference
+		CanCheckoutShared = false
+		SccProjectName4 = \u0022$/技术文档/201011(生产业务系统)/源代码/Solution/Architecture\u0022,\u0020SQMGAAAA
+		SccLocalPath4 = .
+		SccProvider4 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5BBF5CD-3BE7-47FD-A223-6972A1997019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5BBF5CD-3BE7-47FD-A223-6972A1997019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5BBF5CD-3BE7-47FD-A223-6972A1997019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5BBF5CD-3BE7-47FD-A223-6972A1997019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAB3941-0033-4BAF-A1FB-75E438F5CA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAB3941-0033-4BAF-A1FB-75E438F5CA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAB3941-0033-4BAF-A1FB-75E438F5CA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAB3941-0033-4BAF-A1FB-75E438F5CA08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E06725EB-FC78-4428-A1A6-EBBBF7AA42A1} = {C6126E10-6536-43C6-981C-DA704B8C6FD7}
+		{A5BBF5CD-3BE7-47FD-A223-6972A1997019} = {C6126E10-6536-43C6-981C-DA704B8C6FD7}
+		{345328EC-3A67-4AC5-8F8C-87DE1DABEDC4} = {C6126E10-6536-43C6-981C-DA704B8C6FD7}
+		{DDAB3941-0033-4BAF-A1FB-75E438F5CA08} = {C6126E10-6536-43C6-981C-DA704B8C6FD7}
+	EndGlobalSection
+EndGlobal

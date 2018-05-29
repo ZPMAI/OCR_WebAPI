@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="QuickGateManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="quickgate">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuickGateManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QuickGateManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="quickgate">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="QuickGateManageSoapIn">
+    <wsdl:part name="parameters" element="tns:QuickGateManage" />
+  </wsdl:message>
+  <wsdl:message name="QuickGateManageSoapOut">
+    <wsdl:part name="parameters" element="tns:QuickGateManageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="QuickGateSoap">
+    <wsdl:operation name="QuickGateManage">
+      <wsdl:input message="tns:QuickGateManageSoapIn" />
+      <wsdl:output message="tns:QuickGateManageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QuickGateSoap" type="tns:QuickGateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QuickGateManage">
+      <soap:operation soapAction="http://tempuri.org/QuickGateManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="QuickGateSoap12" type="tns:QuickGateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QuickGateManage">
+      <soap12:operation soapAction="http://tempuri.org/QuickGateManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QuickGate">
+    <wsdl:port name="QuickGateSoap" binding="tns:QuickGateSoap">
+      <soap:address location="http://172.16.11.51:9055/Quickgate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="QuickGateSoap12" binding="tns:QuickGateSoap12">
+      <soap12:address location="http://172.16.11.51:9055/Quickgate.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

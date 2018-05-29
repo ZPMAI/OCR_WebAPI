@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MONITOR_VESSEL" targetNamespace="http://tempuri.org/MONITOR_VESSEL.xsd" xmlns:mstns="http://tempuri.org/MONITOR_VESSEL.xsd" xmlns="http://tempuri.org/MONITOR_VESSEL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MONITOR_VESSEL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MONITOR_VESSEL" msprop:Generator_DataSetName="MONITOR_VESSEL">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Vessel_T_VESSEL" msprop:Generator_UserTableName="Vessel_T_VESSEL" msprop:Generator_RowDeletedName="Vessel_T_VESSELRowDeleted" msprop:Generator_TableClassName="Vessel_T_VESSELDataTable" msprop:Generator_RowChangedName="Vessel_T_VESSELRowChanged" msprop:Generator_RowClassName="Vessel_T_VESSELRow" msprop:Generator_RowChangingName="Vessel_T_VESSELRowChanging" msprop:Generator_RowEvArgName="Vessel_T_VESSELRowChangeEvent" msprop:Generator_RowEvHandlerName="Vessel_T_VESSELRowChangeEventHandler" msprop:Generator_TablePropName="Vessel_T_VESSEL" msprop:Generator_TableVarName="tableVessel_T_VESSEL" msprop:Generator_RowDeletingName="Vessel_T_VESSELRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VESSEL" msprop:Generator_UserColumnName="VESSEL" msprop:Generator_ColumnPropNameInRow="VESSEL" msprop:Generator_ColumnVarNameInTable="columnVESSEL" msprop:Generator_ColumnPropNameInTable="VESSELColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE1" msprop:Generator_UserColumnName="TYPE1" msprop:Generator_ColumnPropNameInRow="TYPE1" msprop:Generator_ColumnVarNameInTable="columnTYPE1" msprop:Generator_ColumnPropNameInTable="TYPE1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="SEQ" msprop:Generator_UserColumnName="SEQ" msprop:Generator_ColumnPropNameInRow="SEQ" msprop:Generator_ColumnVarNameInTable="columnSEQ" msprop:Generator_ColumnPropNameInTable="SEQColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VALUE" msprop:Generator_UserColumnName="VALUE" msprop:Generator_ColumnPropNameInRow="VALUE" msprop:Generator_ColumnVarNameInTable="columnVALUE" msprop:Generator_ColumnPropNameInTable="VALUEColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vessel_T_QC" msprop:Generator_UserTableName="Vessel_T_QC" msprop:Generator_RowDeletedName="Vessel_T_QCRowDeleted" msprop:Generator_TableClassName="Vessel_T_QCDataTable" msprop:Generator_RowChangedName="Vessel_T_QCRowChanged" msprop:Generator_RowClassName="Vessel_T_QCRow" msprop:Generator_RowChangingName="Vessel_T_QCRowChanging" msprop:Generator_RowEvArgName="Vessel_T_QCRowChangeEvent" msprop:Generator_RowEvHandlerName="Vessel_T_QCRowChangeEventHandler" msprop:Generator_TablePropName="Vessel_T_QC" msprop:Generator_TableVarName="tableVessel_T_QC" msprop:Generator_RowDeletingName="Vessel_T_QCRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WORKPOINTNO" msprop:Generator_UserColumnName="WORKPOINTNO" msprop:Generator_ColumnPropNameInRow="WORKPOINTNO" msprop:Generator_ColumnVarNameInTable="columnWORKPOINTNO" msprop:Generator_ColumnPropNameInTable="WORKPOINTNOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CAP" msprop:Generator_UserColumnName="CAP" msprop:Generator_ColumnPropNameInRow="CAP" msprop:Generator_ColumnVarNameInTable="columnCAP" msprop:Generator_ColumnPropNameInTable="CAPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QUEUETYPE" msprop:Generator_UserColumnName="QUEUETYPE" msprop:Generator_ColumnPropNameInRow="QUEUETYPE" msprop:Generator_ColumnVarNameInTable="columnQUEUETYPE" msprop:Generator_ColumnPropNameInTable="QUEUETYPEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TTL" msprop:Generator_UserColumnName="TTL" msprop:Generator_ColumnPropNameInRow="TTL" msprop:Generator_ColumnVarNameInTable="columnTTL" msprop:Generator_ColumnPropNameInTable="TTLColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

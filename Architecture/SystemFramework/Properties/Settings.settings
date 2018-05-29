@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CCT.SystemFramework.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RightConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server=172.16.1.78;user id=CCTUSER;password=CCTUSER</Value>
+    </Setting>
+    <Setting Name="ReportUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReportUser</Value>
+    </Setting>
+    <Setting Name="ReportPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ab12!@</Value>
+    </Setting>
+    <Setting Name="ReportDomain" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

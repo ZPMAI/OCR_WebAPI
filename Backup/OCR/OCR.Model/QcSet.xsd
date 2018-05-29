@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QcSet" targetNamespace="http://tempuri.org/QcSet.xsd" xmlns:mstns="http://tempuri.org/QcSet.xsd" xmlns="http://tempuri.org/QcSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.OCR.Model.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QcSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="QcSet" msprop:Generator_DataSetName="QcSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_OCR_QCSET" msprop:Generator_UserTableName="T_OCR_QCSET" msprop:Generator_RowDeletedName="T_OCR_QCSETRowDeleted" msprop:Generator_RowChangedName="T_OCR_QCSETRowChanged" msprop:Generator_RowClassName="T_OCR_QCSETRow" msprop:Generator_RowChangingName="T_OCR_QCSETRowChanging" msprop:Generator_RowEvArgName="T_OCR_QCSETRowChangeEvent" msprop:Generator_RowEvHandlerName="T_OCR_QCSETRowChangeEventHandler" msprop:Generator_TableClassName="T_OCR_QCSETDataTable" msprop:Generator_TableVarName="tableT_OCR_QCSET" msprop:Generator_RowDeletingName="T_OCR_QCSETRowDeleting" msprop:Generator_TablePropName="T_OCR_QCSET">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WORKSET_ID" msprop:Generator_UserColumnName="WORKSET_ID" msprop:Generator_ColumnPropNameInRow="WORKSET_ID" msprop:Generator_ColumnVarNameInTable="columnWORKSET_ID" msprop:Generator_ColumnPropNameInTable="WORKSET_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRVALCRANE_ID" msprop:Generator_UserColumnName="TRVALCRANE_ID" msprop:Generator_ColumnPropNameInRow="TRVALCRANE_ID" msprop:Generator_ColumnVarNameInTable="columnTRVALCRANE_ID" msprop:Generator_ColumnPropNameInTable="TRVALCRANE_IDColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRVALCRANE_NO" msprop:Generator_UserColumnName="TRVALCRANE_NO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TRVALCRANE_NO" msprop:Generator_ColumnPropNameInTable="TRVALCRANE_NOColumn" msprop:Generator_ColumnVarNameInTable="columnTRVALCRANE_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTRACTOR_CODE" msprop:Generator_UserColumnName="CONTRACTOR_CODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CONTRACTOR_CODE" msprop:Generator_ColumnPropNameInTable="CONTRACTOR_CODEColumn" msprop:Generator_ColumnVarNameInTable="columnCONTRACTOR_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMMEND_ID" msprop:Generator_UserColumnName="COMMEND_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="COMMEND_ID" msprop:Generator_ColumnPropNameInTable="COMMEND_IDColumn" msprop:Generator_ColumnVarNameInTable="columnCOMMEND_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRIVER_ID" msprop:Generator_UserColumnName="DRIVER_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DRIVER_ID" msprop:Generator_ColumnPropNameInTable="DRIVER_IDColumn" msprop:Generator_ColumnVarNameInTable="columnDRIVER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SHIP_CODE" msprop:Generator_UserColumnName="SHIP_CODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SHIP_CODE" msprop:Generator_ColumnPropNameInTable="SHIP_CODEColumn" msprop:Generator_ColumnVarNameInTable="columnSHIP_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_VOYAGE_CODE" msprop:Generator_UserColumnName="IN_VOYAGE_CODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IN_VOYAGE_CODE" msprop:Generator_ColumnPropNameInTable="IN_VOYAGE_CODEColumn" msprop:Generator_ColumnVarNameInTable="columnIN_VOYAGE_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OUT_VOYAGE_CODE" msprop:Generator_UserColumnName="OUT_VOYAGE_CODE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OUT_VOYAGE_CODE" msprop:Generator_ColumnPropNameInTable="OUT_VOYAGE_CODEColumn" msprop:Generator_ColumnVarNameInTable="columnOUT_VOYAGE_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BERTH_NUM" msprop:Generator_UserColumnName="BERTH_NUM" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BERTH_NUM" msprop:Generator_ColumnPropNameInTable="BERTH_NUMColumn" msprop:Generator_ColumnVarNameInTable="columnBERTH_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="VOYAGE_TYPE" msprop:Generator_UserColumnName="VOYAGE_TYPE" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="VOYAGE_TYPE" msprop:Generator_ColumnPropNameInTable="VOYAGE_TYPEColumn" msprop:Generator_ColumnVarNameInTable="columnVOYAGE_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHIPMENT_DEAL" msprop:Generator_UserColumnName="SHIPMENT_DEAL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="SHIPMENT_DEAL" msprop:Generator_ColumnPropNameInTable="SHIPMENT_DEALColumn" msprop:Generator_ColumnVarNameInTable="columnSHIPMENT_DEAL" type="xs:string" minOccurs="0" />
+              <xs:element name="OPERATOR_UID" msprop:Generator_UserColumnName="OPERATOR_UID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OPERATOR_UID" msprop:Generator_ColumnPropNameInTable="OPERATOR_UIDColumn" msprop:Generator_ColumnVarNameInTable="columnOPERATOR_UID" type="xs:string" minOccurs="0" />
+              <xs:element name="COMMEND_PAW" msprop:Generator_UserColumnName="COMMEND_PAW" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="COMMEND_PAW" msprop:Generator_ColumnPropNameInTable="COMMEND_PAWColumn" msprop:Generator_ColumnVarNameInTable="columnCOMMEND_PAW" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TERMINAL_NO" msprop:Generator_UserColumnName="TERMINAL_NO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TERMINAL_NO" msprop:Generator_ColumnPropNameInTable="TERMINAL_NOColumn" msprop:Generator_ColumnVarNameInTable="columnTERMINAL_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TICKET_ID" msprop:Generator_UserColumnName="TICKET_ID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TICKET_ID" msprop:Generator_ColumnPropNameInTable="TICKET_IDColumn" msprop:Generator_ColumnVarNameInTable="columnTICKET_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEVICE_NO" msprop:Generator_UserColumnName="DEVICE_NO" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DEVICE_NO" msprop:Generator_ColumnPropNameInTable="DEVICE_NOColumn" msprop:Generator_ColumnVarNameInTable="columnDEVICE_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEVICE_TYPE" msprop:Generator_UserColumnName="DEVICE_TYPE" msprop:Generator_ColumnPropNameInRow="DEVICE_TYPE" msprop:Generator_ColumnVarNameInTable="columnDEVICE_TYPE" msprop:Generator_ColumnPropNameInTable="DEVICE_TYPEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IS_CHANGE" msprop:Generator_UserColumnName="IS_CHANGE" msprop:Generator_ColumnPropNameInRow="IS_CHANGE" msprop:Generator_ColumnVarNameInTable="columnIS_CHANGE" msprop:Generator_ColumnPropNameInTable="IS_CHANGEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_UserColumnName="STATUS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_ColumnVarNameInTable="columnSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="ERROR_MESS" msprop:Generator_UserColumnName="ERROR_MESS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ERROR_MESS" msprop:Generator_ColumnPropNameInTable="ERROR_MESSColumn" msprop:Generator_ColumnVarNameInTable="columnERROR_MESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="512" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_TIME" msprop:Generator_UserColumnName="CREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UPDATE_TIME" msprop:Generator_UserColumnName="UPDATE_TIME" msprop:Generator_ColumnPropNameInRow="UPDATE_TIME" msprop:Generator_ColumnVarNameInTable="columnUPDATE_TIME" msprop:Generator_ColumnPropNameInTable="UPDATE_TIMEColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BERTH_WAY" msprop:Generator_UserColumnName="BERTH_WAY" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnBERTH_WAY" msprop:Generator_ColumnPropNameInTable="BERTH_WAYColumn" msprop:Generator_ColumnPropNameInRow="BERTH_WAY" type="xs:string" minOccurs="0" />
+              <xs:element name="VESSELALIASE" msprop:Generator_UserColumnName="VESSELALIASE" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnVESSELALIASE" msprop:Generator_ColumnPropNameInTable="VESSELALIASEColumn" msprop:Generator_ColumnPropNameInRow="VESSELALIASE" type="xs:string" minOccurs="0" />
+              <xs:element name="BERTHPLANNO" msprop:Generator_UserColumnName="BERTHPLANNO" msprop:Generator_ColumnVarNameInTable="columnBERTHPLANNO" msprop:Generator_ColumnPropNameInRow="BERTHPLANNO" msprop:Generator_ColumnPropNameInTable="BERTHPLANNOColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AVESSELNAME" msprop:Generator_UserColumnName="AVESSELNAME" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnAVESSELNAME" msprop:Generator_ColumnPropNameInTable="AVESSELNAMEColumn" msprop:Generator_ColumnPropNameInRow="AVESSELNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INAGENT" msprop:Generator_UserColumnName="INAGENT" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnINAGENT" msprop:Generator_ColumnPropNameInTable="INAGENTColumn" msprop:Generator_ColumnPropNameInRow="INAGENT" type="xs:string" minOccurs="0" />
+              <xs:element name="OUTAGENT" msprop:Generator_UserColumnName="OUTAGENT" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnOUTAGENT" msprop:Generator_ColumnPropNameInTable="OUTAGENTColumn" msprop:Generator_ColumnPropNameInRow="OUTAGENT" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER" msprop:Generator_UserColumnName="OWNER" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnOWNER" msprop:Generator_ColumnPropNameInTable="OWNERColumn" msprop:Generator_ColumnPropNameInRow="OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="INVESSELLINECODE" msprop:Generator_UserColumnName="INVESSELLINECODE" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnINVESSELLINECODE" msprop:Generator_ColumnPropNameInTable="INVESSELLINECODEColumn" msprop:Generator_ColumnPropNameInRow="INVESSELLINECODE" type="xs:string" minOccurs="0" />
+              <xs:element name="OUTVESSELLINECODE" msprop:Generator_UserColumnName="OUTVESSELLINECODE" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnOUTVESSELLINECODE" msprop:Generator_ColumnPropNameInTable="OUTVESSELLINECODEColumn" msprop:Generator_ColumnPropNameInRow="OUTVESSELLINECODE" type="xs:string" minOccurs="0" />
+              <xs:element name="WORKTYPE" msprop:Generator_UserColumnName="WORKTYPE" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnWORKTYPE" msprop:Generator_ColumnPropNameInTable="WORKTYPEColumn" msprop:Generator_ColumnPropNameInRow="WORKTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="CAMERACODE" msprop:Generator_UserColumnName="CAMERACODE" msprop:nullValue="_empty" msprop:Generator_ColumnVarNameInTable="columnCAMERACODE" msprop:Generator_ColumnPropNameInTable="CAMERACODEColumn" msprop:Generator_ColumnPropNameInRow="CAMERACODE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

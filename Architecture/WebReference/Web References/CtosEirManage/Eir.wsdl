@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="EirManage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EirManageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EirManageResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="eirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteEir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteEirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteEirResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="eirs">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EirManageSoapIn">
+    <wsdl:part name="parameters" element="tns:EirManage" />
+  </wsdl:message>
+  <wsdl:message name="EirManageSoapOut">
+    <wsdl:part name="parameters" element="tns:EirManageResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEirSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteEir" />
+  </wsdl:message>
+  <wsdl:message name="DeleteEirSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteEirResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EirSoap">
+    <wsdl:operation name="EirManage">
+      <wsdl:input message="tns:EirManageSoapIn" />
+      <wsdl:output message="tns:EirManageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEir">
+      <wsdl:input message="tns:DeleteEirSoapIn" />
+      <wsdl:output message="tns:DeleteEirSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EirSoap" type="tns:EirSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EirManage">
+      <soap:operation soapAction="http://tempuri.org/EirManage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEir">
+      <soap:operation soapAction="http://tempuri.org/DeleteEir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EirSoap12" type="tns:EirSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EirManage">
+      <soap12:operation soapAction="http://tempuri.org/EirManage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEir">
+      <soap12:operation soapAction="http://tempuri.org/DeleteEir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Eir">
+    <wsdl:port name="EirSoap" binding="tns:EirSoap">
+      <soap:address location="http://172.16.11.51:9055/Eir.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EirSoap12" binding="tns:EirSoap12">
+      <soap12:address location="http://172.16.11.51:9055/Eir.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
